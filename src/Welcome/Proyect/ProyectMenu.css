@@ -1,0 +1,68 @@
+/* Estilos para el contenedor */
+.proyect-main{
+    background-color: #000;
+    height: 100%;
+    width: 100%;
+}
+
+.proyect-form{
+    height: 90vh;
+    display: flex;
+}
+
+.horizontal-line-left {
+    position: absolute;
+    left: 0;
+    width: 14%;
+    height: 2px;
+    background-color: #AAA; /* Color de la línea */
+    top: 50%;
+}
+
+/* Línea horizontal derecha pegada al borde derecho */
+.horizontal-line-right {
+    position: absolute;
+    right: 0;
+    width: 14%;
+    height: 2px;
+    background-color: #AAA; /* Color de la línea */
+    top: 50%;
+}
+
+.Proyect-card {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    display: flex;
+    width: 800px;
+    margin: auto;
+    color: #000;
+}
+.Proyect-title{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+.Proyect-card button {
+    width: 300px; /* Ancho de los botones */
+    padding: 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de la fuente */
+    cursor: pointer;
+    border: 1px solid black; /* Borde opcional */
+    border-radius: 50px; /* Esquinas redondeadas */
+    background-color: black; /* Fondo opcional */
+    color: white;
+}
+
+.Proyect-card button:hover {
+    background-color: #ddd; /* Fondo al pasar el mouse */
+    color: #000;
+}

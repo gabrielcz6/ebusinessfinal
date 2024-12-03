@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+.headerWelcome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 150px;
+    background-color: #000;
+    color: #fff;
+    height: 10vh;
+    top: 0;
+    left: 0;
+}
+
+/* Logo del header */
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Contenedor del nombre y las iniciales */
+.headerWelcome > div {
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+/* Nombre del usuario */
+.headerWelcome span {
+font-size: 16px;
+font-weight: normal;
+color: #fff;
+}
+
+/* Botón circular con iniciales */
+.header-initials {
+width: 40px;
+height: 40px;
+background-color: #fff; /* Fondo blanco */
+color: #000; /* Texto negro */
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+font-weight: bold;
+font-size: 16px;
+text-transform: uppercase;
+cursor: pointer;
+transition: transform 0.2s, box-shadow 0.2s;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+border: 2px solid #fff;
+}
+
+.header-initials:hover {
+transform: scale(1.1); /* Efecto de agrandamiento al pasar el cursor */
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo del menú desplegable */
+.header-dropdown {
+position: absolute;
+top: 60px; /* Ajusta según la posición del header */
+right: 20px;
+background-color: #fff; /* Fondo blanco */
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+overflow: hidden;
+z-index: 1000;
+}
+
+.header-dropdown-list {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.header-dropdown-item {
+padding: 12px 20px;
+font-size: 14px;
+color: #000;
+cursor: pointer;
+transition: background-color 0.2s, color 0.2s;
+border-bottom: 1px solid #eee;
+}
+
+.header-dropdown-item:last-child {
+border-bottom: none; /* Eliminar el borde del último elemento */
+}
+
+.header-dropdown-item:hover {
+background-color: #f5f5f5; /* Fondo al pasar el cursor */
+color: #000;
+}

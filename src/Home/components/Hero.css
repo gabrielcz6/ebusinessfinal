@@ -1,0 +1,80 @@
+.hero {
+    text-align: center;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 90vh;
+}
+
+.hero h1 {
+    font-family: 'Ledger', serif;
+    font-size: clamp(1.5rem, 6vw, 8rem); /* Tamaño adaptable que se ajusta entre un mínimo y un máximo */
+    letter-spacing: 0.3em;              /* Espaciado entre letras para evitar desbordamiento */
+    white-space: nowrap;
+    color: #FCFCFC;               /* Mantiene el texto en una sola línea */
+    text-align: center;
+}
+
+.hero h1 span {
+    font-family: 'Ledger', serif;
+    display: block;
+    font-size: clamp(1rem, 3vw, 2rem); /* Tamaño adaptable para el subtítulo */
+    color: #FFFFFF;
+    margin-top: 0.5rem;
+}
+
+/* Contenedor para centrar la descripción */
+.description-container {
+    position: relative; /* Necesario para posicionar las líneas horizontales dentro de este contenedor */
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+/* Línea horizontal izquierda pegada al borde izquierdo */
+.horizontal-line-left {
+    position: absolute;
+    left: 0;
+    width: 14%;
+    height: 2px;
+    background-color: #AAA; /* Color de la línea */
+    top: 50%;
+}
+
+/* Línea horizontal derecha pegada al borde derecho */
+.horizontal-line-right {
+    position: absolute;
+    right: 0;
+    width: 14%;
+    height: 2px;
+    background-color: #AAA; /* Color de la línea */
+    top: 50%;
+}
+
+/* Descripción centrada */
+.description {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.view-more {
+    padding: 0.75rem 2rem;
+    border: 1px solid #fff;
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.view-more:hover {
+    background-color: white;
+    color: black;
+}

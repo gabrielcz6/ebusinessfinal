@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+.headerHome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 150px;
+    background-color: #000;
+    color: #fff;
+    height: 10vh;
+    top: 0;
+    left: 0;
+}
+.logo {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    color: #fff;
+}
+
+.nav a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+    margin-left: 20px;
+    font-size: 1rem;
+    position: relative;
+}
+
+.nav a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width 0.3s;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+
+.nav a:hover::after {
+    width: 100%;
+}

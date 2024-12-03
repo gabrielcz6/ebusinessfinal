@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, black 50%, white 50%);
+}
+
+.containerLogin {
+    display: flex;
+    align-items:baseline;
+    height: 90vh;
+    margin: 0;
+    padding: 0;
+}
+.content2 {
+    padding-left: 130px;
+    padding-right: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.left-section {
+    width: 40%;
+    text-align: left;
+    height: 40vh;
+    padding: 50px 20px;
+    min-width: 500px;
+    
+}
+
+
+.left-section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+.left-section span{
+    color: #fff;
+}
+
+.left-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #949494;
+}
+
+.right-section {
+    width: 30%; /* Controlamos el ancho de la sección derecha */
+    background-color: #ffffff;
+    color: black;
+    border-radius: 10px;
+    padding: 30px;
+    display: grid;
+    place-items: center start;
+    text-align: left;
+    border-radius: 8px; /* Opcional: esquinas redondeadas */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra gris sutil */
+    height: 80vh;
+    min-width: 500px;  /* Establece un ancho mínimo de 500px */
+}
+
+.right-section h3 {
+    font-size: 2rem;
+}
+
+.IniSecion h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+.form-group input {
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #1d1c1c;
+    border-radius: 5px;
+    color: black;
+    padding: 20px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center; /* Alinea el checkbox y el texto en una línea horizontal */
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.checkbox-container input {
+    margin-right: 10px; /* Espacio entre el checkbox y el texto */
+}
+
+.login-form button {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+.login-form button:hover {
+    background-color: #000000;
+}
+
+.footer {
+    display: flex; /* Habilita flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente (si es necesario) */
+    text-align: center; /* Centra el texto en caso de múltiples líneas */
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+}
+
+.footer a{
+    color: black;
+    font-weight: bold;
+    font-size: 1em;
+    text-decoration: none;
+}

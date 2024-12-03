@@ -1,0 +1,125 @@
+/* Estilos para el contenedor */
+.Career-main{
+    background-color: #000;
+    height: 100%;
+    width: 100%;
+}
+
+.Career-form{
+    height: 90vh;
+    display: flex;
+}
+
+.career-form-container {
+    display: flex;
+    flex-direction: column; /* Apila elementos verticalmente */
+    justify-content: space-between; /* Distribuir espacio verticalmente */
+    background-color: #fff;
+    color: #000;
+    padding: 60px;
+    border-radius: 10px;
+    width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajustado a un color más visible */
+    margin: auto;
+    text-align: start;
+}
+
+.take-career{
+margin-bottom: 40px;
+}
+
+/* Estilo del input */
+/* Estilo para el input */
+.career-input {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(92, 91, 91);
+}
+
+/* Estilo del botón */
+/* Estilo para el botón */
+.career-button {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Menú de opciones */
+.dropdown {
+    position: absolute;
+    top: 100%; /* Aparece justo debajo del input */
+    left: 0;
+    width: 100%;
+    max-height: 350px; /* Altura fija del menú */
+    overflow-y: auto; /* Hacerlo deslizable */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    z-index: 1000; /* Asegurar que esté sobre otros elementos */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de las opciones */
+.dropdown-option {
+    padding: 10px;
+    cursor: pointer;
+}
+.dropdown-option:hover {
+    background-color: #f0f0f0;
+}
+
+.career-button:hover {
+    background-color: #333;
+}
+/* Línea horizontal izquierda pegada al borde izquierdo */
+.horizontal-line-left {
+    position: absolute;
+    left: 0;
+    width: 14%;
+    height: 2px;
+    background-color: #AAA; /* Color de la línea */
+    top: 50%;
+}
+
+/* Línea horizontal derecha pegada al borde derecho */
+.horizontal-line-right {
+    position: absolute;
+    right: 0;
+    width: 14%;
+    height: 2px;
+    background-color: #AAA; /* Color de la línea */
+    top: 50%;
+}
+
+/* Forzar que el datalist se muestre debajo */
+datalist {
+    position: absolute;
+    top: calc(100% + 5px); /* Para que quede justo debajo del input */
+    left: 0;
+    width: 100%;
+    max-height: 150px; /* Altura máxima del cuadro */
+    overflow-y: auto; /* Hacerlo deslizable */
+    border: 1px solid #ccc;
+    background-color: #fff;
+    z-index: 1000; /* Asegurar que esté sobre otros elementos */
+}
+
+/* Opciones del datalist */
+datalist option {
+    padding: 10px;
+    cursor: pointer;
+}
+
+datalist option:hover {
+    background-color: #f0f0f0;
+}
+
+.career-input-wrapper {
+    position: relative;
+    width: 100%;
+}
